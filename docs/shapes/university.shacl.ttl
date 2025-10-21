@@ -1,0 +1,197 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ex: <http://example.com/> .
+@prefix uni: <http://www.example.org/university#> .
+@prefix courses: <http://www.example.org/courses20212022#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <http://www.example.org/university> .
+
+ex:RootShape
+    a sh:NodeShape ;
+
+    sh:property [
+        sh:name "Students"@en ;
+        sh:path uni:Student ;
+        sh:node uni:StudentShape ;
+        sh:nodeKind sh:IRI ;
+    ] ;
+
+    sh:property [
+        sh:name "Courses"@en ;
+        sh:path uni:Course ;
+        sh:node uni:CourseShape ;
+        sh:nodeKind sh:IRI ;
+    ] ;
+
+    sh:property [
+        sh:name "Departments"@en ;
+        sh:path uni:Department ;
+        sh:node uni:DepartmentShape ;
+        sh:nodeKind sh:IRI ;
+    ] ;
+
+    sh:property [
+        sh:name "Faculties"@en ;
+        sh:path uni:Faculty ;
+        sh:node uni:FacultyShape ;
+        sh:nodeKind sh:IRI ;
+    ] ;
+
+    sh:property [
+        sh:name "Lecturers"@en ;
+        sh:path uni:Lecturer ;
+        sh:node uni:LecturerShape ;
+        sh:nodeKind sh:IRI ;
+    ] .
+
+
+# Contraintes sur uni:Student
+uni:StudentShape
+    a sh:NodeShape ;
+    sh:targetClass uni:Student ;
+    sh:property [
+        sh:path uni:studentID ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path uni:firstName ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path uni:familyName ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path uni:dateOfBirth ;
+        sh:datatype xsd:date ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path uni:year ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path uni:enrolledIn ;
+        sh:class uni:Course ;
+        sh:node uni:CourseShape ;
+        sh:nodeKind sh:IRI ;
+    ] .
+
+# Contraintes sur uni:Course
+uni:CourseShape
+    a sh:NodeShape ;
+    sh:targetClass uni:Course ;
+    sh:property [
+        sh:path uni:courseID ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path uni:courseName ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path uni:classroom ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path uni:scheduledOn ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] .
+
+# Contraintes sur uni:Department
+uni:DepartmentShape
+    a sh:NodeShape ;
+    sh:targetClass uni:Department ;
+    sh:property [
+        sh:path uni:departmentID ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path uni:departmentName ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path uni:partOf ;
+        sh:class uni:Faculty ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:node uni:FacultyShape ;
+    ] ;
+    sh:property [
+        sh:path uni:organizes ;
+        sh:class uni:Course ;
+        sh:node uni:CourseShape ;
+        sh:minCount 0 ;
+    ] .
+
+# Contraintes sur uni:Faculty
+uni:FacultyShape
+    a sh:NodeShape ;
+    sh:targetClass uni:Faculty ;
+    sh:property [
+        sh:path uni:facultyID ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path uni:facultyName ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] .
+
+# Contraintes sur uni:Lecturer
+uni:LecturerShape
+    a sh:NodeShape ;
+    sh:targetClass uni:Lecturer ;
+    sh:property [
+        sh:path uni:lecturerID ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path uni:firstName ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path uni:familyName ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path uni:dateOfBirth ;
+        sh:datatype xsd:dateime ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path uni:teaches ;
+        sh:class uni:Course ;
+        sh:node uni:CourseShape ;
+        sh:nodeKind sh:IRI ;
+    ] .
