@@ -1,0 +1,946 @@
+@prefix : <http://www.example.org/students20212022#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix uni: <http://www.example.org/university#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix courses: <http://www.example.org/courses20212022#> .
+@base <http://www.example.org/students20212022> .
+
+<http://www.example.org/students20212022> rdf:type owl:Ontology ;
+                                           owl:imports <http://www.example.org/courses20212022> .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.example.org/students20212022#s1
+:s1 rdf:type owl:NamedIndividual ,
+             uni:Student ;
+    uni:enrolledIn courses:c1 ,
+                   courses:c3 ,
+                   courses:c4 ,
+                   courses:c9 ;
+    uni:dateOfBirth "1981-09-11"^^xsd:date ;
+    uni:familyName "Verbeeke"^^xsd:string ;
+    uni:firstName "Peter"^^xsd:string ;
+    uni:studentID 1 ;
+    uni:year 1 .
+
+
+###  http://www.example.org/students20212022#s10
+:s10 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:enrolledIn courses:c2 ,
+                    courses:c5 ,
+                    courses:c9 ;
+     uni:dateOfBirth "1977-02-15"^^xsd:date ;
+     uni:familyName "Degrootte"^^xsd:string ;
+     uni:firstName "Gunter"^^xsd:string ;
+     uni:studentID 10 ;
+     uni:year 4 .
+
+
+###  http://www.example.org/students20212022#s11
+:s11 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:enrolledIn courses:c11 ,
+                    courses:c6 ,
+                    courses:c9 ;
+     uni:dateOfBirth "1979-02-22"^^xsd:date ;
+     uni:familyName "Adam"^^xsd:string ;
+     uni:firstName "Nk"^^xsd:string ;
+     uni:studentID 11 ;
+     uni:year 1 .
+
+
+###  http://www.example.org/students20212022#s12
+:s12 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:enrolledIn courses:c4 ,
+                    courses:c6 ,
+                    courses:c9 ;
+     uni:dateOfBirth "1974-12-19"^^xsd:date ;
+     uni:familyName "Bonduelle"^^xsd:string ;
+     uni:firstName "Bart"^^xsd:string ;
+     uni:studentID 12 ;
+     uni:year 4 .
+
+
+###  http://www.example.org/students20212022#s13
+:s13 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:enrolledIn courses:c2 ,
+                    courses:c3 ,
+                    courses:c9 ;
+     uni:dateOfBirth "1980-05-09"^^xsd:date ;
+     uni:familyName "Claes"^^xsd:string ;
+     uni:firstName "Lindsey"^^xsd:string ;
+     uni:studentID 13 ;
+     uni:year 2 .
+
+
+###  http://www.example.org/students20212022#s14
+:s14 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:enrolledIn courses:c2 ,
+                    courses:c3 ,
+                    courses:c9 ;
+     uni:dateOfBirth "1979-04-12"^^xsd:date ;
+     uni:familyName "Kerkart"^^xsd:string ;
+     uni:firstName "Davy"^^xsd:string ;
+     uni:studentID 14 ;
+     uni:year 1 .
+
+
+###  http://www.example.org/students20212022#s15
+:s15 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:enrolledIn courses:c10 ,
+                    courses:c4 ,
+                    courses:c9 ;
+     uni:dateOfBirth "1974-08-24"^^xsd:date ;
+     uni:familyName "Dewulf"^^xsd:string ;
+     uni:firstName "Dirk"^^xsd:string ;
+     uni:studentID 15 ;
+     uni:year 4 .
+
+
+###  http://www.example.org/students20212022#s16
+:s16 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:enrolledIn courses:c3 ,
+                    courses:c9 ;
+     uni:dateOfBirth "1974-07-13"^^xsd:date ;
+     uni:familyName "Soens"^^xsd:string ;
+     uni:firstName "Vincent"^^xsd:string ;
+     uni:studentID 16 ;
+     uni:year 4 .
+
+
+###  http://www.example.org/students20212022#s17
+:s17 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:enrolledIn courses:c2 ,
+                    courses:c4 ,
+                    courses:c6 ;
+     uni:dateOfBirth "1981-03-31"^^xsd:date ;
+     uni:familyName "Konincks"^^xsd:string ;
+     uni:firstName "Steven"^^xsd:string ;
+     uni:studentID 17 ;
+     uni:year 1 .
+
+
+###  http://www.example.org/students20212022#s18
+:s18 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:enrolledIn courses:c1 ,
+                    courses:c8 ,
+                    courses:c9 ;
+     uni:dateOfBirth "1979-12-05"^^xsd:date ;
+     uni:familyName "Bundervoedt"^^xsd:string ;
+     uni:firstName "Michael"^^xsd:string ;
+     uni:studentID 18 ;
+     uni:year 3 .
+
+
+###  http://www.example.org/students20212022#s19
+:s19 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:enrolledIn courses:c11 ,
+                    courses:c3 ,
+                    courses:c6 ;
+     uni:dateOfBirth "1980-11-27"^^xsd:date ;
+     uni:familyName "Salieu"^^xsd:string ;
+     uni:firstName "Pieter"^^xsd:string ;
+     uni:studentID 19 ;
+     uni:year 2 .
+
+
+###  http://www.example.org/students20212022#s2
+:s2 rdf:type owl:NamedIndividual ,
+             uni:Student ;
+    uni:enrolledIn courses:c1 ,
+                   courses:c11 ,
+                   courses:c3 ,
+                   courses:c4 ,
+                   courses:c5 ,
+                   courses:c9 ;
+    uni:dateOfBirth "1981-01-05"^^xsd:date ;
+    uni:familyName "Degreef"^^xsd:string ;
+    uni:firstName "Jan"^^xsd:string ;
+    uni:studentID 2 ;
+    uni:year 1 .
+
+
+###  http://www.example.org/students20212022#s20
+:s20 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:enrolledIn courses:c2 ,
+                    courses:c4 ,
+                    courses:c9 ;
+     uni:dateOfBirth "1980-03-19"^^xsd:date ;
+     uni:familyName "Eeckout"^^xsd:string ;
+     uni:firstName "Francis"^^xsd:string ;
+     uni:studentID 20 ;
+     uni:year 2 .
+
+
+###  http://www.example.org/students20212022#s21
+:s21 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:enrolledIn courses:c3 ,
+                    courses:c6 ,
+                    courses:c9 ;
+     uni:dateOfBirth "1979-05-21"^^xsd:date ;
+     uni:familyName "Maes"^^xsd:string ;
+     uni:firstName "Alex"^^xsd:string ;
+     uni:studentID 21 ;
+     uni:year 2 .
+
+
+###  http://www.example.org/students20212022#s22
+:s22 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:enrolledIn courses:c2 ,
+                    courses:c5 ,
+                    courses:c8 ;
+     uni:dateOfBirth "1979-02-14"^^xsd:date ;
+     uni:familyName "Moens"^^xsd:string ;
+     uni:firstName "Peter"^^xsd:string ;
+     uni:studentID 22 ;
+     uni:year 1 .
+
+
+###  http://www.example.org/students20212022#s23
+:s23 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:enrolledIn courses:c11 ,
+                    courses:c4 ,
+                    courses:c7 ;
+     uni:dateOfBirth "1980-11-20"^^xsd:date ;
+     uni:familyName "Bergez"^^xsd:string ;
+     uni:firstName "Piet"^^xsd:string ;
+     uni:studentID 23 ;
+     uni:year 1 .
+
+
+###  http://www.example.org/students20212022#s24
+:s24 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:enrolledIn courses:c2 ,
+                    courses:c4 ,
+                    courses:c6 ;
+     uni:dateOfBirth "1977-06-21"^^xsd:date ;
+     uni:familyName "Antonissen"^^xsd:string ;
+     uni:firstName "Stijn"^^xsd:string ;
+     uni:studentID 24 ;
+     uni:year 4 .
+
+
+###  http://www.example.org/students20212022#s25
+:s25 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:enrolledIn courses:c3 ,
+                    courses:c6 ,
+                    courses:c9 ;
+     uni:dateOfBirth "1976-07-21"^^xsd:date ;
+     uni:familyName "Dujardin"^^xsd:string ;
+     uni:firstName "Karen"^^xsd:string ;
+     uni:studentID 25 ;
+     uni:year 4 .
+
+
+###  http://www.example.org/students20212022#s26
+:s26 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:enrolledIn courses:c1 ,
+                    courses:c10 ,
+                    courses:c4 ;
+     uni:dateOfBirth "1978-01-31"^^xsd:date ;
+     uni:familyName "Vandeneinde"^^xsd:string ;
+     uni:firstName "Koen"^^xsd:string ;
+     uni:studentID 26 ;
+     uni:year 4 .
+
+
+###  http://www.example.org/students20212022#s27
+:s27 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:enrolledIn courses:c1 ,
+                    courses:c6 ,
+                    courses:c9 ;
+     uni:dateOfBirth "1979-01-09"^^xsd:date ;
+     uni:familyName "Huybrechts"^^xsd:string ;
+     uni:firstName "Bruno"^^xsd:string ;
+     uni:studentID 27 ;
+     uni:year 3 .
+
+
+###  http://www.example.org/students20212022#s28
+:s28 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:enrolledIn courses:c3 ,
+                    courses:c4 ,
+                    courses:c8 ;
+     uni:dateOfBirth "1975-10-18"^^xsd:date ;
+     uni:familyName "Coppens"^^xsd:string ;
+     uni:firstName "John"^^xsd:string ;
+     uni:studentID 28 ;
+     uni:year 4 .
+
+
+###  http://www.example.org/students20212022#s29
+:s29 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:enrolledIn courses:c4 ,
+                    courses:c6 ,
+                    courses:c9 ;
+     uni:dateOfBirth "1976-05-25"^^xsd:date ;
+     uni:familyName "Winnock"^^xsd:string ;
+     uni:firstName "Hans"^^xsd:string ;
+     uni:studentID 29 ;
+     uni:year 3 .
+
+
+###  http://www.example.org/students20212022#s3
+:s3 rdf:type owl:NamedIndividual ,
+             uni:Student ;
+    uni:enrolledIn courses:c2 ,
+                   courses:c3 ,
+                   courses:c9 ;
+    uni:dateOfBirth "1979-09-12"^^xsd:date ;
+    uni:familyName "Nisez"^^xsd:string ;
+    uni:firstName "Natacha"^^xsd:string ;
+    uni:studentID 3 ;
+    uni:year 3 .
+
+
+###  http://www.example.org/students20212022#s30
+:s30 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:dateOfBirth "1979-08-16"^^xsd:date ;
+     uni:familyName "Peeters"^^xsd:string ;
+     uni:firstName "Gert"^^xsd:string ;
+     uni:studentID 30 ;
+     uni:year 3 .
+
+
+###  http://www.example.org/students20212022#s31
+:s31 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:dateOfBirth "1977-03-03"^^xsd:date ;
+     uni:familyName "Riviere"^^xsd:string ;
+     uni:firstName "Kristof"^^xsd:string ;
+     uni:studentID 31 ;
+     uni:year 4 .
+
+
+###  http://www.example.org/students20212022#s32
+:s32 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:dateOfBirth "1981-11-24"^^xsd:date ;
+     uni:familyName "Titeca"^^xsd:string ;
+     uni:firstName "Joachim"^^xsd:string ;
+     uni:studentID 32 ;
+     uni:year 1 .
+
+
+###  http://www.example.org/students20212022#s33
+:s33 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:dateOfBirth "1981-02-13"^^xsd:date ;
+     uni:familyName "Quirinen"^^xsd:string ;
+     uni:firstName "Inge"^^xsd:string ;
+     uni:studentID 33 ;
+     uni:year 1 .
+
+
+###  http://www.example.org/students20212022#s34
+:s34 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:dateOfBirth "1981-02-08"^^xsd:date ;
+     uni:familyName "Corvelein"^^xsd:string ;
+     uni:firstName "Olivier"^^xsd:string ;
+     uni:studentID 34 ;
+     uni:year 1 .
+
+
+###  http://www.example.org/students20212022#s35
+:s35 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:dateOfBirth "1980-07-27"^^xsd:date ;
+     uni:familyName "Naessens"^^xsd:string ;
+     uni:firstName "Laurent"^^xsd:string ;
+     uni:studentID 35 ;
+     uni:year 2 .
+
+
+###  http://www.example.org/students20212022#s36
+:s36 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:dateOfBirth "1980-04-17"^^xsd:date ;
+     uni:familyName "Kroon"^^xsd:string ;
+     uni:firstName "Stefaan"^^xsd:string ;
+     uni:studentID 36 ;
+     uni:year 1 .
+
+
+###  http://www.example.org/students20212022#s37
+:s37 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:dateOfBirth "1979-10-12"^^xsd:date ;
+     uni:familyName "Everts"^^xsd:string ;
+     uni:firstName "Elke"^^xsd:string ;
+     uni:studentID 37 ;
+     uni:year 3 .
+
+
+###  http://www.example.org/students20212022#s38
+:s38 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:dateOfBirth "1977-04-01"^^xsd:date ;
+     uni:familyName "Devey"^^xsd:string ;
+     uni:firstName "David"^^xsd:string ;
+     uni:studentID 38 ;
+     uni:year 3 .
+
+
+###  http://www.example.org/students20212022#s39
+:s39 rdf:type owl:NamedIndividual ,
+              uni:Student ;
+     uni:dateOfBirth "1977-06-29"^^xsd:date ;
+     uni:familyName "Lindekens"^^xsd:string ;
+     uni:firstName "Sarah"^^xsd:string ;
+     uni:studentID 39 ;
+     uni:year 4 .
+
+
+###  http://www.example.org/students20212022#s4
+:s4 rdf:type owl:NamedIndividual ,
+             uni:Student ;
+    uni:enrolledIn courses:c11 ,
+                   courses:c2 ,
+                   courses:c4 ;
+    uni:dateOfBirth "1977-11-11"^^xsd:date ;
+    uni:familyName "Vercauteren"^^xsd:string ;
+    uni:firstName "Tine"^^xsd:string ;
+    uni:studentID 4 ;
+    uni:year 3 .
+
+
+###  http://www.example.org/students20212022#s5
+:s5 rdf:type owl:NamedIndividual ,
+             uni:Student ;
+    uni:enrolledIn courses:c3 ,
+                   courses:c4 ,
+                   courses:c9 ;
+    uni:dateOfBirth "1981-10-27"^^xsd:date ;
+    uni:familyName "Verkest"^^xsd:string ;
+    uni:firstName "Joshua"^^xsd:string ;
+    uni:studentID 5 ;
+    uni:year 1 .
+
+
+###  http://www.example.org/students20212022#s6
+:s6 rdf:type owl:NamedIndividual ,
+             uni:Student ;
+    uni:enrolledIn courses:c3 ,
+                   courses:c6 ,
+                   courses:c9 ;
+    uni:dateOfBirth "1978-09-19"^^xsd:date ;
+    uni:familyName "Volkaert"^^xsd:string ;
+    uni:firstName "Ferdinando"^^xsd:string ;
+    uni:studentID 6 ;
+    uni:year 4 .
+
+
+###  http://www.example.org/students20212022#s7
+:s7 rdf:type owl:NamedIndividual ,
+             uni:Student ;
+    uni:enrolledIn courses:c11 ,
+                   courses:c3 ,
+                   courses:c4 ;
+    uni:dateOfBirth "1976-03-27"^^xsd:date ;
+    uni:familyName "Seghers"^^xsd:string ;
+    uni:firstName "Sam"^^xsd:string ;
+    uni:studentID 7 ;
+    uni:year 4 .
+
+
+###  http://www.example.org/students20212022#s8
+:s8 rdf:type owl:NamedIndividual ,
+             uni:Student ;
+    uni:enrolledIn courses:c3 ,
+                   courses:c9 ;
+    uni:dateOfBirth "1980-04-09"^^xsd:date ;
+    uni:familyName "Roels"^^xsd:string ;
+    uni:firstName "Emanuel"^^xsd:string ;
+    uni:studentID 8 ;
+    uni:year 1 .
+
+
+###  http://www.example.org/students20212022#s9
+:s9 rdf:type owl:NamedIndividual ,
+             uni:Student ;
+    uni:enrolledIn courses:c1 ,
+                   courses:c3 ,
+                   courses:c4 ;
+    uni:dateOfBirth "1977-07-17"^^xsd:date ;
+    uni:familyName "Vantomme"^^xsd:string ;
+    uni:firstName "Peter"^^xsd:string ;
+    uni:studentID 9 ;
+    uni:year 3 .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+@prefix : <http://www.example.org/courses20212022#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix uni: <http://www.example.org/university#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.example.org/courses20212022> .
+
+<http://www.example.org/courses20212022> rdf:type owl:Ontology ;
+                                          owl:imports <http://www.example.org/university> .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.example.org/courses20212022#c1
+:c1 rdf:type owl:NamedIndividual ,
+             uni:Course ;
+    uni:classroom "10F110"^^xsd:string ;
+    uni:courseID 1 ;
+    uni:courseName "Machine Learning"^^xsd:string ;
+    uni:scheduledOn "Tuesday"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#c10
+:c10 rdf:type owl:NamedIndividual ,
+              uni:Course ;
+     uni:classroom "10F111"^^xsd:string ;
+     uni:courseID 10 ;
+     uni:courseName "Quantum Physics"^^xsd:string ;
+     uni:scheduledOn "Friday"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#c11
+:c11 rdf:type owl:NamedIndividual ,
+              uni:Course ;
+     uni:classroom "4B103"^^xsd:string ;
+     uni:courseID 11 ;
+     uni:courseName "Philosophy of Science"^^xsd:string ;
+     uni:scheduledOn "Wednesday"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#c2
+:c2 rdf:type owl:NamedIndividual ,
+             uni:Course ;
+    uni:classroom "10F113"^^xsd:string ;
+    uni:courseID 2 ;
+    uni:courseName "Calculus"^^xsd:string ;
+    uni:scheduledOn "Monday"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#c3
+:c3 rdf:type owl:NamedIndividual ,
+             uni:Course ;
+    uni:classroom "10F111"^^xsd:string ;
+    uni:courseID 3 ;
+    uni:courseName "Artificial Intelligence"^^xsd:string ;
+    uni:scheduledOn "Wednesday"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#c4
+:c4 rdf:type owl:NamedIndividual ,
+             uni:Course ;
+    uni:classroom "10F111"^^xsd:string ;
+    uni:courseID 4 ;
+    uni:courseName "Databases"^^xsd:string ;
+    uni:scheduledOn "Friday"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#c5
+:c5 rdf:type owl:NamedIndividual ,
+             uni:Course ;
+    uni:classroom "10F111"^^xsd:string ;
+    uni:courseID 5 ;
+    uni:courseName "Advanced Calculus"^^xsd:string ;
+    uni:scheduledOn "Monday"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#c6
+:c6 rdf:type owl:NamedIndividual ,
+             uni:Course ;
+    uni:classroom "10G721"^^xsd:string ;
+    uni:courseID 6 ;
+    uni:courseName "Internet Systems"^^xsd:string ;
+    uni:scheduledOn "Thursday"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#c7
+:c7 rdf:type owl:NamedIndividual ,
+             uni:Course ;
+    uni:classroom "10F112"^^xsd:string ;
+    uni:courseID 7 ;
+    uni:courseName "Nuclear Physics"^^xsd:string ;
+    uni:scheduledOn "Friday"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#c8
+:c8 rdf:type owl:NamedIndividual ,
+             uni:Course ;
+    uni:classroom "10F113"^^xsd:string ;
+    uni:courseID 8 ;
+    uni:courseName "Formal Logics"^^xsd:string ;
+    uni:scheduledOn "Tuesday"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#c9
+:c9 rdf:type owl:NamedIndividual ,
+             uni:Course ;
+    uni:classroom "10F112"^^xsd:string ;
+    uni:courseID 9 ;
+    uni:courseName "Software Engineering"^^xsd:string ;
+    uni:scheduledOn "Thursday"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#d1
+:d1 rdf:type owl:NamedIndividual ,
+             uni:Department ;
+    uni:organizes :c1 ,
+                  :c3 ,
+                  :c4 ,
+                  :c6 ,
+                  :c9 ;
+    uni:partOf :f1 ;
+    uni:departmentID 1 ;
+    uni:departmentName "Computer Science"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#d2
+:d2 rdf:type owl:NamedIndividual ,
+             uni:Department ;
+    uni:organizes :c10 ,
+                  :c2 ,
+                  :c5 ,
+                  :c8 ;
+    uni:partOf :f1 ;
+    uni:departmentID 2 ;
+    uni:departmentName "Mathematics"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#d3
+:d3 rdf:type owl:NamedIndividual ,
+             uni:Department ;
+    uni:partOf :f1 ;
+    uni:departmentID 3 ;
+    uni:departmentName "Biology"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#d4
+:d4 rdf:type owl:NamedIndividual ,
+             uni:Department ;
+    uni:partOf :f1 ;
+    uni:departmentID 4 ;
+    uni:departmentName "Bio-Engineering"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#d5
+:d5 rdf:type owl:NamedIndividual ,
+             uni:Department ;
+    uni:partOf :f1 ;
+    uni:departmentID 5 ;
+    uni:departmentName "Chemistry"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#d6
+:d6 rdf:type owl:NamedIndividual ,
+             uni:Department ;
+    uni:partOf :f1 ;
+    uni:departmentID 6 ;
+    uni:departmentName "Geology"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#d7
+:d7 rdf:type owl:NamedIndividual ,
+             uni:Department ;
+    uni:partOf :f1 ;
+    uni:departmentID 7 ;
+    uni:departmentName "Geography"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#d8
+:d8 rdf:type owl:NamedIndividual ,
+             uni:Department ;
+    uni:organizes :c8 ;
+    uni:partOf :f1 ;
+    uni:departmentID 8 ;
+    uni:departmentName "Other"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#f1
+:f1 rdf:type owl:NamedIndividual ,
+             uni:Faculty ;
+    uni:facultyID 1 ;
+    uni:facultyName "Sciences"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#f2
+:f2 rdf:type owl:NamedIndividual ,
+             uni:Faculty ;
+    uni:facultyID 2 ;
+    uni:facultyName "Applied Sciences and Engineering"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#f3
+:f3 rdf:type owl:NamedIndividual ,
+             uni:Faculty ;
+    uni:facultyID 3 ;
+    uni:facultyName "Pyschology"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#f4
+:f4 rdf:type owl:NamedIndividual ,
+             uni:Faculty ;
+    uni:facultyID 4 ;
+    uni:facultyName "Arts and Philosphy"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#f5
+:f5 rdf:type owl:NamedIndividual ,
+             uni:Faculty ;
+    uni:facultyID 5 ;
+    uni:facultyName "Economy"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#f6
+:f6 rdf:type owl:NamedIndividual ,
+             uni:Faculty ;
+    uni:facultyID 6 ;
+    uni:facultyName "Physical Education"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#f7
+:f7 rdf:type owl:NamedIndividual ,
+             uni:Faculty ;
+    uni:facultyID 7 ;
+    uni:facultyName "Law"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#f8
+:f8 rdf:type owl:NamedIndividual ,
+             uni:Faculty ;
+    uni:facultyID 8 ;
+    uni:facultyName "Medecin"^^xsd:string .
+
+
+###  http://www.example.org/courses20212022#t1
+:t1 rdf:type owl:NamedIndividual ,
+             uni:Lecturer ;
+    uni:teaches :c1 ,
+                :c2 ,
+                :c9 ;
+    uni:dateOfBirth "1978-06-21"^^xsd:dateime ;
+    uni:familyName "Signer"^^xsd:string ;
+    uni:firstName "Beat"^^xsd:string ;
+    uni:lecturerID 1 .
+
+
+###  http://www.example.org/courses20212022#t2
+:t2 rdf:type owl:NamedIndividual ,
+             uni:Lecturer ;
+    uni:teaches :c10 ,
+                :c3 ,
+                :c4 ;
+    uni:dateOfBirth "1970-04-05"^^xsd:dateime ;
+    uni:familyName "Markovitch"^^xsd:string ;
+    uni:firstName "Olivier"^^xsd:string ;
+    uni:lecturerID 2 .
+
+
+###  http://www.example.org/courses20212022#t3
+:t3 rdf:type owl:NamedIndividual ,
+             uni:Lecturer ;
+    uni:teaches :c11 ,
+                :c5 ,
+                :c6 ;
+    uni:dateOfBirth "1975-08-09"^^xsd:dateime ;
+    uni:familyName "Geraarts"^^xsd:string ;
+    uni:firstName "Gilles"^^xsd:string ;
+    uni:lecturerID 3 .
+
+
+###  http://www.example.org/courses20212022#t4
+:t4 rdf:type owl:NamedIndividual ,
+             uni:Lecturer ;
+    uni:teaches :c7 ,
+                :c8 ;
+    uni:dateOfBirth "1963-01-30"^^xsd:dateime ;
+    uni:familyName "Casano"^^xsd:string ;
+    uni:firstName "Paola"^^xsd:string ;
+    uni:lecturerID 4 .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+@prefix : <http://www.example.org/university#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.example.org/university> .
+
+<http://www.example.org/university> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.example.org/university#enrolledIn
+:enrolledIn rdf:type owl:ObjectProperty ;
+            rdfs:domain :Student ;
+            rdfs:range :Course .
+
+
+###  http://www.example.org/university#organizes
+:organizes rdf:type owl:ObjectProperty ;
+           rdfs:domain :Department ;
+           rdfs:range :Course .
+
+
+###  http://www.example.org/university#partOf
+:partOf rdf:type owl:ObjectProperty ;
+        rdfs:domain :Department ;
+        rdfs:range :Faculty .
+
+
+###  http://www.example.org/university#teaches
+:teaches rdf:type owl:ObjectProperty ;
+         rdfs:domain :Lecturer ;
+         rdfs:range :Course .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.example.org/university#classroom
+:classroom rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Course ;
+           rdfs:range xsd:string .
+
+
+###  http://www.example.org/university#courseID
+:courseID rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Course ;
+          rdfs:range xsd:integer .
+
+
+###  http://www.example.org/university#courseName
+:courseName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Course ;
+            rdfs:range xsd:string .
+
+
+###  http://www.example.org/university#dateOfBirth
+:dateOfBirth rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Person ;
+             rdfs:range xsd:date .
+
+
+###  http://www.example.org/university#departmentID
+:departmentID rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Department ;
+              rdfs:range xsd:integer .
+
+
+###  http://www.example.org/university#departmentName
+:departmentName rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Department ;
+                rdfs:range xsd:string .
+
+
+###  http://www.example.org/university#facultyID
+:facultyID rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Faculty ;
+           rdfs:range xsd:integer .
+
+
+###  http://www.example.org/university#facultyName
+:facultyName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Faculty ;
+             rdfs:range xsd:string .
+
+
+###  http://www.example.org/university#familyName
+:familyName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Person ;
+            rdfs:range xsd:string .
+
+
+###  http://www.example.org/university#firstName
+:firstName rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Person ;
+           rdfs:range xsd:string .
+
+
+###  http://www.example.org/university#lecturerID
+:lecturerID rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Lecturer ;
+            rdfs:range xsd:integer .
+
+
+###  http://www.example.org/university#scheduledOn
+:scheduledOn rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Course ;
+             rdfs:range xsd:string .
+
+
+###  http://www.example.org/university#studentID
+:studentID rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Student ;
+           rdfs:range xsd:integer .
+
+
+###  http://www.example.org/university#year
+:year rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Student ;
+      rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.example.org/university#Course
+:Course rdf:type owl:Class .
+
+
+###  http://www.example.org/university#Department
+:Department rdf:type owl:Class .
+
+
+###  http://www.example.org/university#Faculty
+:Faculty rdf:type owl:Class .
+
+
+###  http://www.example.org/university#Lecturer
+:Lecturer rdf:type owl:Class ;
+          rdfs:subClassOf :Person .
+
+
+###  http://www.example.org/university#Person
+:Person rdf:type owl:Class .
+
+
+###  http://www.example.org/university#Student
+:Student rdf:type owl:Class ;
+         rdfs:subClassOf :Person .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

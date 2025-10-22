@@ -14,6 +14,16 @@ init(defaultOptions)
 
 const demos = [
   {
+    title: 'University',
+    description: 'University model with Students, Courses, Departments, Faculties and Lecturers',
+    shaclUrl: '../shapes/university.shacl.ttl?raw',
+    shaclIri: 'http://example.com/RootShape',
+    dataUrl: '../data/university-data.ttl?raw',
+    dataIri: 'http://www.example.org/students20212022',
+    contentLanguage: 'en',
+    activeContentLanguage: 'en'
+  },
+  {
     title: 'Full demo',
     description: 'This demo tries to have all features',
     shaclUrl: '../shapes/full.shacl.ttl?raw',
