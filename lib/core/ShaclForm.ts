@@ -6,7 +6,7 @@ import DatasetCore from '@rdfjs/dataset/DatasetCore'
 import { sh, rdf, shFrm, shn } from '../helpers/namespaces'
 import * as prefixesSource from '../helpers/namespaces'
 import { createRoot } from 'react-dom/client'
-import { createElement, StrictMode } from 'react'
+import { createElement } from 'react'
 import { FormLevelBase } from '../components/FormLevel'
 import { shaclTree } from './shaclTree'
 import { LocalizationProvider } from '@fluent/react';

@@ -10,7 +10,8 @@ declare module 'shacl-engine/lib/parsePath.js';
 
 declare module 'grapoi';
 
-declare module JSX {
+declare namespace JSX {
+  // Minimal JSX augmentation so custom elements like <bcp47-picker /> are allowed
   interface IntrinsicElements {
     'bcp47-picker': any
   }
